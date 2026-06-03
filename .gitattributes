@@ -1,0 +1,4 @@
+lancedb_medical/** filter=lfs diff=lfs merge=lfs -text
+Archives/** filter=lfs diff=lfs merge=lfs -text
+dataset_1/** filter=lfs diff=lfs merge=lfs -text
+dataset_2/** filter=lfs diff=lfs merge=lfs -text
