@@ -8,7 +8,7 @@ from app_m import client, retrieve_and_rerank # On importe ton client Groq et to
 
 # --- CONFIGURATION ---
 TEST_FILE = "dataset_2/mcqu_test.json" 
-LIMIT = 30 
+LIMIT = 100 
 
 print("⏳ Chargement du modèle NLI local pour l'évaluation...")
 tokenizer = AutoTokenizer.from_pretrained("MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")

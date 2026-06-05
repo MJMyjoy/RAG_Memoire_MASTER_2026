@@ -16,7 +16,7 @@ import edsnlp
 st.set_page_config(page_title="MediQAl RAG Assistant", layout="wide")
 
 # Clé API Groq (À définir dans tes variables d'environnement ou ici directement)
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY")    # os.environ.get("GROQ_API_KEY", "TA_CLE_GROQ_ICI")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")    # Remplacez os.environ.get("GROQ_API_KEY") par la clé
 client = Groq(api_key=GROQ_API_KEY)
 
 # Dossier des données
@@ -161,7 +161,7 @@ def check_hallucination_nli(premise, hypothesis):
     return {"entailment": probs[0], "neutral": probs[1], "contradiction": probs[2]}
 
 def generate_and_verify(query, contexts):
-    """Génère la réponse avec Llama 3 et l'évalue phrase par phrase."""
+    """Génère la réponse avec Llama 4 et l'évalue phrase par phrase."""
     
     context_text = "\n\n".join([f"Source {i+1}: {ctx['text']}" for i, ctx in enumerate(contexts)])
     
@@ -180,7 +180,7 @@ Règles strictes :
     ]
 
     response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
+        model="meta-llama/llama-4-scout-17b-16e-instruct",
         messages=messages,
         temperature=0.1, # Très bas pour éviter les hallucinations
         max_tokens=1024
