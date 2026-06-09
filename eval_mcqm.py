@@ -7,8 +7,10 @@ import pandas as pd
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from groq import RateLimitError  # Importation pour gérer les limites de requêtes
 
-# Importations depuis votre fichier local app_mcqm.py
-from app_mcqm import client, retrieve_and_rerank, device
+# Importations depuis votre fichier local app_m.py
+from app_m import client, retrieve_and_rerank
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # --- CONFIGURATION ---
 

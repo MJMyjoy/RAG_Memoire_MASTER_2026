@@ -6,8 +6,8 @@ import pandas as pd
 from tqdm import tqdm
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-# Importation sécurisée depuis le fichier app_mcqu de votre espace Colab
-from app_mcqu import client, retrieve_and_rerank 
+# Importation sécurisée depuis le fichier app_m de votre espace Colab
+from app_m import client, retrieve_and_rerank 
 
 # --- CONFIGURATION VALEURS ÉLEVÉES ---
 
