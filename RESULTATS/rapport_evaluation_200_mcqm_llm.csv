@@ -1,0 +1,201 @@
+ID,Question,Vraie,IA,Score,Soutien NLI
+21347,"Parmi les maladies suivantes, quelle(s) est(sont) ...","A,B,C,D,E","A,E",0.4,0.0
+3208,"Parmi les critères suivants, lequel ou lesquels a(...","C,D,E","C,D",0.67,0.05
+1120,Devant une tachycardie ventriculaire soutenue et b...,"B,D","B,D",1.0,0.0
+12201,L'induction enzymatique est une propriété :...,"B,D","B,D",1.0,1.0
+13021,"Au bout de 24 heures, son état s'aggrave. Parmi le...","A,B,C,D","A,B,C",0.75,0.0
+7225,L'anatoxine tétanique est pratiquement applicable ...,"A,E","A,E",1.0,0.01
+6557,Un sujet en coma dépassé :...,"B,E","B,C",0.33,0.06
+3464,L'IgG3 se distingue des autres sous-classes d'lgG ...,"A,C,D","A,C",0.67,0.06
+6127,Le(s)quel(s) de ces 5 éléments peu(ven)t être incr...,"A,D","A,D",1.0,0.15
+19126,Sur quel(s) élément(s) allez-vous juger de l'effic...,"A,B,D","A,B,D",1.0,0.0
+2815,L'hémogramme d'une anémie de Biermer typique et no...,"A,B,E","B,D,E",0.5,0.55
+8622,Le syndrome de Wallenberg :...,"A,B",A,0.5,0.0
+14434,Un malade présente une insuffisance aortique. Parm...,"B,D","B,D",1.0,0.0
+462,Une adénopathie métastatique isolée sus-claviculai...,"B,C","A,E",0.0,0.0
+17562,Quel(s) diagnostic(s) portez-vous ?...,"B,C","B,C",1.0,0.18
+9887,La paralysie du VI droit comporte :...,"C,E",B,0.0,0.13
+3342,Parmi les substances libérées par les Iymphocytes ...,"A,B,C,D","A,B,C",0.75,0.88
+2408,La consanguinité :...,"C,D","B,D",0.33,0.04
+20201,"Une jeune fille de 16 ans, à la charge des ses par...","A,B,C","A,C",0.67,0.09
+20606,Une telle angine peut se compliquer de:...,"A,C",A,0.5,0.01
+14058,"La fréquence de la trisomie 21 est, à la naissance...","A,C",A,0.5,0.01
+9983,Indiquer le(s) facteur(s) qui intervien(nen)t dans...,"C,D","C,E",0.33,0.17
+16764,"Parmi les causes suivantes, éventuellement curable...","B,C","B,C",1.0,0.79
+10086,Lors d'une instillation prolongée d'un collyre cor...,"A,E","A,C,E",0.67,0.91
+1251,L'hépatomégalie de l'insuffisance cardiaque droite...,"B,D,E","C,D,E",0.5,0.0
+12917,L'initiation de l'antibiothérapie nécessite de vér...,"A,B,C",C,0.33,0.02
+4237,Un malade a une constipation chronique. Parmi ces ...,"A,E","A,C,D,E",0.5,0.07
+15546,Quelles est ou quelles sont ce (ces) manifestation...,"A,C,D","A,C,D",1.0,1.0
+17424,"Deux mois plus tard, la surveillance portera sur :...","A,B,C","A,C,E",0.5,0.0
+1361,"Au cours d'une péricardite aiguë, l'ECG peut montr...","A,B,C","A,B,C,E",0.75,0.01
+4034,Parmi les propositions suivantes concernant le tra...,"A,D","A,C",0.33,1.0
+7599,Quel(s) autre(s) signes(s) d'examen pouvez-vous re...,"A,B,C,E","A,B,D,E",0.6,0.01
+15223,Comment allez-vous transporter idéalement un polyt...,"C,D","C,D",1.0,0.5
+2837,Un inhibiteur acquis de type anti-prothrombinase e...,"B,C",B,0.5,0.0
+12454,L'auscultation pulmonaire révèle chez un sujet âgé...,"A,D,E","A,D",0.67,0.0
+16851,La séméiologie du syndrome de Cushing comporte cla...,"A,C,D","A,C,D,E",0.75,1.0
+8992,Indiquez parmi les symptômes suivants celui ou ceu...,"A,C","A,E",0.33,0.01
+21108,La surveillance fait appel à :...,"A,B,C,D,E","A,B,C,E",0.8,0.14
+20187,Le séminome pur est une tumeur :...,"B,C,D","B,D",0.67,0.74
+5513,Le ou les signes faisant craindre l'apparition d'u...,"A,B,E","A,B,E",1.0,0.01
+8324,"Parmi les attitudes suivantes, vous choisissez de ...","A,C",C,0.5,0.71
+21253,Sur quel(s) signe(s) clinique(s) repose le diagnos...,"A,B","A,B",1.0,0.17
+7488,"Parmi ces streptocoques, le(s)quel(s) est (sont) t...","B,D",B,0.5,0.05
+11724,Le traitement que vous allez proposer devant ce ta...,"D,E","A,E",0.33,0.15
+13250,"Selon les critères définis par Delay et Deniker, l...","A,B,C,D","A,B,C,D",1.0,0.0
+10036,Un scotome central gauche peut relever de :...,"D,E","A,D,E",0.67,0.0
+5188,L'agent responsable du tétanos possède un ou plusi...,"A,D","A,D",1.0,0.12
+17385,"Parmi les éléments suivants, rapportés dans l'obse...","B,C","B,C",1.0,0.09
+12937,Parmi les éléments cliniques suivants quel(s) est(...,"D,E",E,0.5,1.0
+13368,Le trouble du langage d'un état démentiel de type ...,"B,D,E",B,0.33,0.99
+12860,"Le cas échéant, une interférence métabolique avec ...","B,D","B,D",1.0,0.54
+15397,"Quels sont, parmi les critères suivants, celui ou ...","A,D,E","A,E",0.67,0.79
+8119,Pour préciser la nature de la lacune calicielle et...,"A,B,C,D",E,0.0,0.27
+8757,Vous êtes amené à examiner un patient venant de pr...,"A,D","A,D",1.0,0.01
+14656,Chez un sujet présentant une surdité de transmissi...,"B,C,E","B,C,E",1.0,0.01
+8348,"La pression artérielle étant basse, vous pensez tr...","C,E","C,E",1.0,0.98
+6401,"Au titre de la responsabilité médicale, une sancti...","A,B,C","A,B",0.67,0.0
+7002,Pour pouvoir bénéficier d'une prise en charge au t...,"A,C","A,C,D",0.67,0.01
+15980,Le point de départ d'une embolie pulmonaire peut ê...,"A,B,D","A,D",0.67,0.99
+1646,Tous les intertrigos suivants peuvent être de caus...,"A,C,E","C,D,E",0.5,0.73
+12708,Un syndrome de compression cave supérieure apparaî...,"A,C,D","A,C",0.67,0.0
+18975,Quel(s) est (sont) le(s) signe(s) toujours constat...,"B,C",B,0.5,0.0
+12816,On peut envisager comme traitement :...,"A,B,C,D","B,C",0.5,0.03
+18525,L'épidémiologie de la grippe est caractérisée par ...,"A,B,C,D,E","A,B,C,D,E",1.0,0.1
+19811,Le(s) signe(s) clinique(s) souvent rencontré(s) da...,"A,B,C,D,E","B,D,E",0.6,0.16
+15553,Quelles sont les deux associations lésionnelles le...,"B,E","A,B",0.33,0.01
+8730,Une thrombose de la carotide gauche peut se manife...,"A,C,D,E","A,B,D,E",0.6,0.01
+1692,"Parmi ces maladies alopéciques, deux peuvent entra...","C,E","B,C",0.33,0.01
+6521,L'interruption de grossesse pour motif thérapeutiq...,"A,B,C","A,C",0.67,0.02
+17397,Parmi les manifestations cliniques de cette malade...,"A,B,D","B,D",0.67,0.11
+12104,La codéine :...,"A,E","A,B,C,E",0.5,0.25
+5455,"Parmi les thérapeutiques suivantes, quelle(s) est ...","D,E",D,0.5,0.55
+4069,Le diagnostic de hernie hiatale par roulement est ...,"A,B","A,B",1.0,0.24
+898,"Après le traitement initial, l'enfant reçoit plusi...","A,B,E","A,E",0.67,0.05
+10545,"Parmi les surdités de perception suivantes, 2 sont...","A,E","A,E",1.0,0.62
+18133,"Parmi les examens paracliniques suivants, vous dev...","B,C,D,E","C,D",0.5,0.0
+13660,Quelle(s) médicament(s) prescrit-on pour le traite...,"A,E","B,E",0.33,0.0
+8595,Un collapsus chez un polytraumatisé crânien comate...,"B,D","B,D",1.0,0.45
+11508,"Au plan étiologique, le purpura de cet enfant est ...","A,C,D,E","A,D,E",0.75,0.99
+14574,Quelle est ou quelles sont la ou les artère(s) don...,"B,C,D,E",D,0.25,0.0
+8882,"Quels sont chez un sujet droitier, les signes renc...","A,C,D,E","A,C,D",0.75,0.05
+7364,"Parmi les caractères suivants, lequel(lesquels) co...","B,C,E","B,C",0.67,0.01
+19863,"Parmi les dermatoses suivantes, quelle(s) est (son...","A,C,D","A,D",0.67,0.0
+19486,Les signes généraux de la maladie de Hodgkin actue...,"A,B,C","A,B,C",1.0,0.0
+18490,Les cellules épithélioïdes :...,"C,D","C,D,E",0.67,0.0
+3358,Parmi les propositions suivantes concernant le tes...,"A,E","A,E",1.0,0.92
+18315,Une menace d'accouchement prématuré est favorisé p...,"A,B,C,D","A,C,D",0.75,0.02
+12719,Les EFR et la gazométrie objectivent :...,"A,E",C,0.0,0.0
+7587,Le diagnostic d'infection à dermatophyte peut être...,"A,E","C,E",0.33,0.0
+20184,Le virus grippal de type A :...,"B,C",B,0.5,0.0
+20366,Devant une diarrhée aiguë fébrile évoluant depuis ...,"A,C","A,C",1.0,0.49
+11431,"Devant ce tableau, quel(s) argument(s) épidémiolog...","B,D","B,D",1.0,0.01
+22230,"Parmi tous ces éléments, quels sont ceux qui orien...","A,D",A,0.5,0.05
+12459,L'évolution d'un pneumothorax idiopathique de l'ad...,"A,C","B,C",0.33,0.92
+6484,Le médecin pourrait légalement rompre le secret mé...,"B,D,E",D,0.33,0.01
+1271,En faveur du diagnostic d'algie vasculaire de la f...,"A,D","A,D",1.0,0.31
+3811,Quel(s) est (sont) celui (ceux) qui vous permettra...,"B,C","B,C",1.0,0.57
+18197,"Devant une candidose muqueuse, quel(s) médicament(...","B,C,E","B,C",0.67,0.01
+13915,Parmi ces modes d'hébergement pour personnes âgées...,"A,B,E",A,0.33,0.0
+9077,"Parmi les signes d'examen suivants, vous devez par...","B,C,E","B,C",0.67,0.0
+11399,Quelle(s) proposition(s) peut (peuvent) s'applique...,"C,D","C,D,E",0.67,0.84
+17928,Quel(s) germe(s) est (sont) responsable(s) de leuc...,"A,B","A,B",1.0,0.03
+17520,"En cours d'hospitalisation, laquelle ou lesquelles...","A,D,E","D,E",0.67,0.0
+10875,Quelles sont parmi les bactéries suivantes respons...,"B,C,E","B,C,E",1.0,0.01
+14691,"Parmi les 5 propositions suivantes, quelle est cel...","A,C,D","A,C,D",1.0,0.0
+1083,Le surdosage digitalique peut provoquer en cliniqu...,"A,B,C,D,E","A,B,D,E",0.8,0.84
+11961,Une corticothérapie prolongée peut être responsabl...,"A,B,C,E","A,C,E",0.75,0.14
+20732,Chez une personne de 70 ans comment prévenir une t...,"D,E","A,B,E",0.25,0.0
+20232,Un allongement important du temps de saignement s'...,"A,C,D,E","A,D",0.5,0.67
+2344,Parmi les propositions suivantes concernant l'héré...,"A,D,E","A,D,E",1.0,0.63
+10638,"Parmi les affections suivantes, 2 doivent être évo...","D,E","B,D",0.33,0.0
+13497,Dans un but thérapeutique il est indispensable de ...,"B,C,E",E,0.33,0.0
+20538,Une ou plusieurs des démarches suivantes est(sont)...,"A,B","A,B",1.0,0.39
+12156,La voie rectale :...,"A,B,C,E","A,B,C,E",1.0,0.0
+6528,"Le médecin est tenu de se porter dénonciateur, et ...","B,C,D,E","D,E",0.5,0.0
+18909,La diverticulose sigmoidienne peut se compliquer p...,"B,C,D,E","B,C,D,E",1.0,0.03
+7156,Quel(s) autre(s) examen(s) complémentaire(s) va (v...,"A,D","A,D",1.0,0.18
+6197,L'annulaire a été sectionné par le coup de scie au...,"C,D,E","C,D,E",1.0,0.0
+18479,Le classement d'une maladie de Hodgkin en stade B ...,"C,E","C,E",1.0,0.03
+12265,"Parmi les propositions suivantes, indiquer celle(s...","A,B,C,E","C,E",0.5,0.99
+20330,La pustulose de Kaposi Juliusberg à Herpès virus :...,"A,B,C,D,E","A,B,C,D,E",1.0,0.11
+16235,Laquelle(esquelles) parmi ces 5 propositions perme...,"A,B,D","A,B,D",1.0,0.0
+8701,Les lacunes cérébrales :...,"A,B,E","A,B,E",1.0,0.0
+7950,"Parmi les tumeurs rénales certainement bénignes, v...","B,E","B,E",1.0,0.68
+20807,L'hypercalcémie peut s'accompagner de la(des) mani...,"B,C,D,E","B,E",0.5,0.2
+1637,Les séquelles de brûlures comportent :...,"A,B,C,D,E","A,B,C,E",0.8,0.07
+18262,Le dosage plasmatique d'HCG bêta est positif à 100...,"A,B,D",D,0.33,0.02
+22289,"On observe, au cours d'une bouffée délirante aigue...","A,B,D","D,E",0.25,0.09
+1461,Parmi les affirmations suivantes concernant l'isch...,"A,B,C,E","A,B,E",0.75,0.05
+19800,Parmi les signes suivants quels sont ceux qui peuv...,"A,C,E","A,C,E",1.0,0.59
+2205,Parmi les assertions suivantes concernant la triso...,"A,C,E","A,C,E",1.0,0.0
+18890,"En cas de suspicion de myélome, devant une hypogam...","C,D,E","C,D",0.67,0.37
+18963,Les récurrences herpétiques:...,"A,B,C,E","A,C,E",0.75,0.11
+16329,Un bilan hémodynamique et angiographique est réali...,"B,D,E","B,D,E",1.0,0.0
+18765,"Parmi les signes suivants, le ou lesquels imposera...","A,C,E","A,C",0.67,0.18
+10062,Quelle(s) est ou sont la ou les lésions pouvant êt...,"B,C,D","A,B,C",0.5,0.03
+2717,"Parmi les caractères du purpura rhumatoïde, il fau...","B,C,D,E","C,E",0.5,0.45
+4720,Au cours de la mononucléose infectieuse quelle(s) ...,"B,D,E","B,D,E",1.0,0.15
+18893,L'association d'une splénomégalie et d'une thrombo...,"A,B,D,E","A,B,D,E",1.0,0.0
+15926,"Quels sont parmi les suivants, les 2 antibiotiques...","A,C","A,C",1.0,0.58
+4080,Une augmentation de la gamma glutamyl transpeptida...,"A,B,C,D","B,C",0.5,0.66
+6019,La section du nerf sciatique poplité externe est a...,"B,E","B,C,E",0.67,0.06
+22174,La sémiologie neurologique correspond à une attein...,"B,D",B,0.5,0.0
+8159,A ce stade la démarche diagnostique doit faire int...,"A,B,E","B,C",0.25,0.96
+18736,Indiquez les deux examens qui vous paraissent les ...,"C,D","C,D",1.0,0.49
+12842,Chez ce malade 3 diagnostics pouvaient être évoqué...,"A,B,D,E","B,C,E",0.4,0.0
+9755,"Parmi les signes suivants, le(s)quel(s) se rencont...","A,C,E","A,C,E",1.0,0.0
+9319,"Parmi les acides gras suivants, le(s)quel(s) est(s...","B,E","B,E",1.0,0.01
+10573,La nature maligne d'une tuméfaction parotidienne e...,"A,D","A,D",1.0,0.01
+15794,Parmi les propositions suivantes concernant le lym...,"A,B,C,E","C,E",0.5,0.01
+5925,"Quelques jours après, le malade vous apporte les r...","A,B,C,D,E","A,B,D",0.6,0.0
+10954,L'ictère néonatal par incompatibilité Rhésus foeto...,"B,D,E","D,E",0.67,0.0
+20526,Sur quel(s) élément(s) clinique(s) repose votre di...,"A,B,C","B,C",0.67,0.03
+5872,Le traitement des métastases osseuses peut bénéfic...,"B,C,D","B,C,D",1.0,0.0
+11848,"Parmi ces médicaments,quel est celui (ou quels son...","B,C,D","B,D",0.67,0.93
+15013,"Parmi les examens suivants, lesquels permettent de...","A,B,C,D","A,B,C",0.75,0.02
+19144,L'état maniaque dans sa forme typique comprend:...,"A,C","A,B,C",0.67,0.03
+19058,Des épistaxis récidivantes chez un adulte peuvent ...,"A,C,D","A,C,D",1.0,0.0
+12196,"Parmi les médicaments suivants, cocher les deux qu...","B,C,D","B,D",0.67,0.0
+14956,Quels sont chez ce patient les signes qui pourraie...,"A,B,C,D","B,C,D",0.75,0.0
+8330,"Devant l'hypertension, si vous choisissez de renfo...","A,B,C",A,0.33,0.01
+21110,Le risque pour le foetus comporte :...,"B,D,E","D,E",0.67,0.0
+2519,"Si le garçon hémophile a une fille, le risque pour...","C,E",B,0.0,0.0
+21013,Quels sont les signes histologiques de cette lésio...,"A,D","B,D",0.33,0.73
+14649,"Concernant l'exophtalmie, il est exact que :...","A,B,C,D","A,B,C,D",1.0,0.01
+16802,Parmi les propositions suivantes relatives à l'hyp...,"B,D","B,D",1.0,0.0
+202,Histologiquement un cancer de l'ovaire peut être :...,"A,B,C,D,E","A,B,E",0.6,0.0
+8055,Chez un patient en anurie par calcul radio-opaque ...,"A,B","A,B,E",0.67,0.99
+205,L'examen histologique d'un ganglion Iymphatique mo...,"A,B,C","A,B,C",1.0,0.99
+17834,"Parmi les affections suivantes, indiquez celle(s) ...","A,B,C,D","A,B,D,E",0.6,0.01
+10486,La maladie de Ménière peut comporter :...,"A,B,C,D,E","A,B,C,D,E",1.0,0.47
+1002,Indiquer parmi les antihypertenseurs suivants celu...,"C,D","C,D",1.0,0.04
+13429,La ou les caractéristique(s) de ce délire est ou s...,"A,D","A,C,D",0.67,0.99
+12631,"Au cours d'une crise d'asthme paroxystique isolée,...","A,B,D","A,D",0.67,0.01
+19528,La névralgie essentielle du trijumeau :...,"A,C,D","A,C,D",1.0,0.0
+15734,L'anémie de l'insuffisance rénale chronique est :...,"A,B,E","A,B,C",0.5,0.03
+2741,Une anémie hémolytique à autoanticorps froids de c...,"A,B,C,D,E","A,D,E",0.6,0.0
+21233,Quels signes orientent vers une thyroïdite sub-aig...,"A,B,D,E","A,D,E",0.75,0.1
+17961,Le test de Guthrie :...,"A,C","A,C",1.0,0.0
+7384,Le virus de l'herpès :...,"A,B,C,D,E","B,C,D,E",0.8,0.28
+13065,Si l'indication d'une intervention chirurgicale de...,"A,C,D","A,C",0.67,0.0
+12151,Parmi les incidents susceptibles de survenir au co...,"A,B,E","B,E",0.67,0.99
+4958,Le vaccin antidiphtérique :...,"A,B,C,E",A,0.25,0.0
+16109,"Parmi les hypothèses diagnostiqués suivantes, vous...","A,D","A,D",1.0,0.0
+15559,Les gonocoques :...,"A,D,E","A,D,E",1.0,0.0
+3832,Quel(s) argument(s) vous font évoquer ce diagnosti...,"A,C","A,B,E",0.25,0.09
+10190,Que!(s) examen(s) opthalmologique(s) permet(tent) ...,"A,B","A,B,D,E",0.5,0.05
+4775,A quelle(s) période(s) peut-on être amené à recomm...,"A,B,C,E","C,E",0.5,0.08
+20358,"Devant un état d'obnubilation, sont compatibles av...","A,B,C,E","A,D,E",0.4,0.0
+19262,La maladie de Pick :...,"B,D","B,C,D",0.67,0.0
+22095,A propos de la vaccination antigrippale:...,"A,B","A,B",1.0,0.14
+11998,La stimulation des récepteurs bêta adrénergiques p...,"C,D","C,D",1.0,0.0
+20885,Le diagnostic d'obstruction carotidienne au cou pe...,"A,B","A,B",1.0,0.0
+14448,Quelles lésions peuvent être observées au cours du...,"A,B,C","A,B,C",1.0,0.48
+3762,"Parmi les caractéristiques suivantes, la ou lesque...","A,B,D","A,D",0.67,0.01
+86,"Au cours de son évolution, l'infractus du myocarde...","A,C,D,E","A,C,E",0.75,0.0
+18873,"Quelles sont, parmi les propositions suivantes, ce...","A,B,C,D","A,C,D",0.75,0.01
+18841,La survenue d'un herpès récurrent:...,"C,D","C,D",1.0,0.02
+2857,Le temps de céphaline kaolin est allongé dans :...,"A,C,D","C,D",0.67,0.29
+13370,"Parmi les symptômes suivants, lequel (lesquels) ap...","A,B,C,D","A,B,C,D",1.0,0.58

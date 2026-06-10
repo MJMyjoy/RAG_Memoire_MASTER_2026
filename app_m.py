@@ -166,7 +166,7 @@ def generate_and_verify(query, contexts):
     context_text = "\n\n".join([f"Source {i+1}: {ctx['text']}" for i, ctx in enumerate(contexts)])
     
 
-    system_prompt = """Tu es un assistant médical expert francophone. Ta règle absolue est la rigueur et la prudence.
+    system_prompt = """Tu es un assistant médical francophone. Ta règle absolue est la rigueur et la prudence.
 Règles strictes :
 1. Salutations : Si l'utilisateur dit bonjour, réponds poliment.
 2. Basé EXCLUSIVEMENT sur les sources : Utilise UNIQUEMENT les sources fournies pour répondre. Ne cite pas de lettres (A, B, C), mais explique les concepts.
