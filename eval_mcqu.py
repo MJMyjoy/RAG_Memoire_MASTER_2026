@@ -77,8 +77,10 @@ def executer_evaluation_qcm():
 
         # 2. Prompt ÉVALUATION (Appel Groq optimisé)
         prompt_eval = f"""Tu es un agent d'évaluation de QCM médicaux. 
-Analyse le cas, la question et les choix fournis ci-dessous.
-Tu as le droit d'utiliser tes connaissances si le contexte fourni est insuffisant.
+
+1. Analyse le cas, la question et les choix fournis ci-dessous.
+2. Formate TOUJOURS ta réponse sous forme de phrases déclaratives complètes (Sujet + Verbe + Complément). INTERDICTION ABSOLUE d'utiliser des listes à puces (•, -, *, etc.) ou des mots isolés. Chaque complication ou fait médical doit faire l'objet d'une phrase complète (ex: "La diverticulose sigmoïdienne peut se compliquer d'une hémorragie digestive.") afin de permettre sa validation logique.
+3. Tu as le droit d'utiliser tes connaissances si le contexte fourni est insuffisant.
 
 {case_text}
 Question : {question}
@@ -95,7 +97,7 @@ RÉPONSE_FINALE : suivi des lettres correctes séparées par une virgule.
                     {
                         "role": "system", 
                         "content": (
-                            "Tu es un expert médical. Analyse la question et le contexte fourni. "
+                            "Analyse la question et le contexte fourni. "
                             "Sélectionne la ou les deux meilleures lettres maximum qui te semblent correctes. "
                             "Tu devez répondre STRICTEMENT sous le format : RÉPONSE_FINALE : X, Y (ou juste X s'il n'y en a qu'une)."
                         )

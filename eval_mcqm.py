@@ -26,6 +26,9 @@ print("⏳ Chargement du modèle NLI local pour l'évaluation sur GPU...")
 tokenizer = AutoTokenizer.from_pretrained("MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
 model = AutoModelForSequenceClassification.from_pretrained("MoritzLaurer/mDeBERTa-v3-base-mnli-xnli").to(device)
 
+   
+
+
 def extraire_lettres(texte_ia):
     """Extrait proprement les lettres uniques (A,B,C,D,E) de la fin de la réponse."""
     match = re.search(r"RÉPONSE_FINALE\s*:\s*([A-E\s,]+)", texte_ia, re.IGNORECASE)
@@ -89,8 +92,10 @@ def executer_evaluation_qcm():
 
             # 2. Prompt ÉVALUATION Strict
             prompt_eval = f"""Tu es un agent d'évaluation de QCM médicaux. 
-Analyse le cas, la question et les choix fournis ci-dessous.
-Tu l'autorisation d'utiliser tes connaissances si le contexte fourni est insuffisant.
+
+1. Analyse le cas, la question et les choix fournis ci-dessous.
+2. Formate TOUJOURS ta réponse sous forme de phrases déclaratives complètes (Sujet + Verbe + Complément). INTERDICTION ABSOLUE d'utiliser des listes à puces (•, -, *, etc.) ou des mots isolés. Chaque complication ou fait médical doit faire l'objet d'une phrase complète (ex: "La diverticulose sigmoïdienne peut se compliquer d'une hémorragie digestive.") afin de permettre sa validation logique.
+3. Tu as le droit d'utiliser tes connaissances si le contexte fourni est insuffisant.
 
 {case_text}
 Question : {question}
