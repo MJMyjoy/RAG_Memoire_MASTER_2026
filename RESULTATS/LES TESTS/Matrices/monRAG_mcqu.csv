@@ -1,0 +1,10 @@
+Mesure,Valeur
+Accuracy,0.879
+Precision,0.6695278969957081
+Recall,0.78
+F1-score,0.7205542725173211
+Specificity,0.90375
+TP,156.0
+TN,723.0
+FP,77.0
+FN,44.0
