@@ -82,7 +82,7 @@ def executer_evaluation_qcm():
             # 2. Prompt ÉVALUATION Strict
             prompt_eval = f"""Tu es un agent d'évaluation de QCM médicaux. 
 Analyse le cas, la question et les choix fournis ci-dessous.
-Tu l'autorisation d'utiliser tes connaissances si le contexte fourni est insuffisant.
+Tu n'as pas le droit d'utiliser tes connaissances, même si le contexte fourni est insuffisant.
 
 {case_text}
 Question : {question}
