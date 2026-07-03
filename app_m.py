@@ -16,7 +16,7 @@ import edsnlp
 st.set_page_config(page_title="MediQAl RAG Assistant", layout="wide")
 
 # Clé API Groq (À définir dans tes variables d'environnement ou ici directement)
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY")    # Remplacez os.environ.get("GROQ_API_KEY") par la clé
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY") 
 client = Groq(api_key=GROQ_API_KEY)
 
 # Dossier des données
@@ -182,7 +182,7 @@ Règles strictes :
     ]
 
     response = client.chat.completions.create(
-        model="meta-llama/llama-4-scout-17b-16e-instruct",
+        model="meta-llama/llama-4-scout-17b-16e-instruct", # ou : llama-3.3-70b-versatile ou encore : llama-3.1-8b-instant
         messages=messages,
         temperature=0.1, # Très bas pour éviter les hallucinations
         max_tokens=1024
