@@ -219,6 +219,7 @@ Règles strictes :
 
     return llm_answer, verified_output, contexts
 
+
 # ==========================================
 # 4. INTERFACE UTILISATEUR (STREAMLIT)
 # ==========================================
@@ -228,29 +229,85 @@ query = st.text_input("Posez votre question médicale (ou testez une salutation 
 
 if st.button("Analyser") and query:
     with st.spinner("Recherche et réflexion en cours..."):
-        # 1. Retrieval
-        contexts = retrieve_and_rerank(query)
+        try:
+            # 1. Retrieval
+            contexts = retrieve_and_rerank(query)
+            
+            # 2. Generation & NLI Check
+            if not contexts and "bonjour" not in query.lower() and "salut" not in query.lower():
+                st.warning("Aucune source locale pertinente trouvée. L'IA utilisera ses connaissances générales.")
+                contexts = [{"text": "Aucune information locale."}]
+                
+            raw_answer, verified_data, used_contexts = generate_and_verify(query, contexts)
+            
+            # 3. Affichage
+            st.subheader("🤖 Réponse de l'IA")
+            st.write(raw_answer)
+            
+            st.subheader("📊 Transparence et Analyse d'Incertitude (NLI)")
+            for item in verified_data:
+                if item["status"] == "bypassed":
+                    continue
+                
+                st.markdown(f"<span style='color:{item['color']}'><b>{item['status']}</b></span> : {item['text']}", unsafe_allow_html=True)
+                scores = item["scores"]
+                st.caption(f"Scores NLI -> Soutien (Entailment): {scores['entailment']:.2f} | Neutre: {scores['neutral']:.2f} | Contradiction: {scores['contradiction']:.2f}")
+
+            with st.expander("📄 Voir les documents sources utilisés (Citations strictes)"):
+                for i, ctx in enumerate(used_contexts):
+                    st.info(f"**Source {i+1}** (Score de pertinence: {ctx.get('rerank_score', 0):.2f}) :\n{ctx['text']}")
+
+        # ==========================================
+        # GESTION DES ERREURS POUR LA DÉFENSE
+        # ==========================================
+        except Exception as e:
+            error_message = str(e).lower()
+            if "timeout" in error_message or "connection" in error_message:
+                st.error("⚠️ **Problème de connexion.** Le temps de réponse de l'IA est dépassé. Veuillez vérifier la connexion internet et réessayer.")
+            elif "rate limit" in error_message:
+                st.warning("⏳ **Limite de requêtes atteinte.** L'API Groq est surchargée. Veuillez patienter quelques secondes.")
+            else:
+                st.error("🚨 **Une erreur inattendue s'est produite.** (Vérifiez les logs pour plus de détails).")
+
+
+
+
+
+
+
+
+# ==========================================
+# 4. INTERFACE UTILISATEUR (STREAMLIT)
+# ==========================================
+#st.title("🩺 MediQAl - RAG Anti-Hallucination")
+
+#query = st.text_input("Posez votre question médicale (ou testez une salutation / un cas complexe) :")
+
+#if st.button("Analyser") and query:
+#    with st.spinner("Recherche et réflexion en cours..."):
+#        # 1. Retrieval
+#        contexts = retrieve_and_rerank(query)
         
         # 2. Generation & NLI Check
-        if not contexts and "bonjour" not in query.lower() and "salut" not in query.lower():
-            st.warning("Aucune source locale pertinente trouvée. L'IA utilisera ses connaissances générales.")
-            contexts = [{"text": "Aucune information locale."}]
+#        if not contexts and "bonjour" not in query.lower() and "salut" not in query.lower():
+#            st.warning("Aucune source locale pertinente trouvée. L'IA utilisera ses connaissances générales.")
+#            contexts = [{"text": "Aucune information locale."}]
             
-        raw_answer, verified_data, used_contexts = generate_and_verify(query, contexts)
+#        raw_answer, verified_data, used_contexts = generate_and_verify(query, contexts)
         
         # 3. Affichage
-        st.subheader("🤖 Réponse de l'IA")
-        st.write(raw_answer)
+#        st.subheader("🤖 Réponse de l'IA")
+#        st.write(raw_answer)
         
-        st.subheader("📊 Transparence et Analyse d'Incertitude (NLI)")
-        for item in verified_data:
-            if item["status"] == "bypassed":
-                continue
+#        st.subheader("📊 Transparence et Analyse d'Incertitude (NLI)")
+#        for item in verified_data:
+#            if item["status"] == "bypassed":
+#                continue
             
-            st.markdown(f"<span style='color:{item['color']}'><b>{item['status']}</b></span> : {item['text']}", unsafe_allow_html=True)
-            scores = item["scores"]
-            st.caption(f"Scores NLI -> Soutien (Entailment): {scores['entailment']:.2f} | Neutre: {scores['neutral']:.2f} | Contradiction: {scores['contradiction']:.2f}")
+#            st.markdown(f"<span style='color:{item['color']}'><b>{item['status']}</b></span> : {item['text']}", unsafe_allow_html=True)
+#            scores = item["scores"]
+#            st.caption(f"Scores NLI -> Soutien (Entailment): {scores['entailment']:.2f} | Neutre: {scores['neutral']:.2f} | Contradiction: {scores['contradiction']:.2f}")
 
-        with st.expander("📄 Voir les documents sources utilisés (Citations strictes)"):
-            for i, ctx in enumerate(used_contexts):
-                st.info(f"**Source {i+1}** (Score de pertinence: {ctx.get('rerank_score', 0):.2f}) :\n{ctx['text']}")
+#        with st.expander("📄 Voir les documents sources utilisés (Citations strictes)"):
+#            for i, ctx in enumerate(used_contexts):
+#                st.info(f"**Source {i+1}** (Score de pertinence: {ctx.get('rerank_score', 0):.2f}) :\n{ctx['text']}")
