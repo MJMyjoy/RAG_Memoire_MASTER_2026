@@ -182,7 +182,7 @@ Règles strictes :
     ]
 
     response = client.chat.completions.create(
-        model="meta-llama/llama-4-scout-17b-16e-instruct", # ou : llama-3.3-70b-versatile ou encore : llama-3.1-8b-instant
+        model="llama-3.3-70b-versatile", # ou meta-llama/llama-4-scout-17b-16e-instruct" ou encore : llama-3.1-8b-instant
         messages=messages,
         temperature=0.1, # Très bas pour éviter les hallucinations
         max_tokens=1024
