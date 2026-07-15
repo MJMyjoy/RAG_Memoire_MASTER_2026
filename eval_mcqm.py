@@ -110,7 +110,7 @@ RÉPONSE_FINALE : suivi des lettres correctes séparées par une virgule.
             for tentative in range(5):
                 try:
                     response = client.chat.completions.create(
-                        model="llama-3.3-70b-versatile",
+                        model="openai/gpt-oss-120b",
                         messages=[
                             {"role": "system", "content": "Tu réponds uniquement sous le format RÉPONSE_FINALE : X, Y"},
                             {"role": "user", "content": prompt_eval}
